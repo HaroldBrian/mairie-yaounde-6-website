@@ -1,0 +1,98 @@
+{
+  "main": [
+    {
+      "name": "Accueil",
+      "url": "/"
+    },
+    {
+      "name": "Actualités",
+      "url": "/posts"
+    },
+    {
+      "name": "Réalisations et Projets",
+      "url": "/about",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Réalisations",
+          "url": "/about"
+        },
+        {
+          "name": "Projets en Cours",
+          "url": "/about"
+        },
+        {
+          "name": "Implication Citoyenne ",
+          "url": "/about"
+        }
+      ]
+    },
+    {
+      "name": "Nos Services",
+      "url": "/elements",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Démarches Pratiques et Procédures Administratives",
+          "url": "/about"
+        },
+        {
+          "name": "Lieux Touristiques et de Loisirs",
+          "url": "/about"
+        },
+        {
+          "name": "Centres d’Éducation et de Formation",
+          "url": "/about"
+        },
+        {
+          "name": "Autres Services",
+          "url": "/about"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer_service": [
+    {
+      "name": "Démarches Pratiques et Procédures Administratives",
+      "url": "/about"
+    },
+    {
+      "name": "Lieux Touristiques et de Loisirs",
+      "url": "/about"
+    },
+    {
+      "name": "Centres d’Éducation et de Formation",
+      "url": "/about"
+    },
+    {
+      "name": "Autres Services",
+      "url": "/about"
+    }
+  ],
+  "footer": [
+    {
+      "name": "A propos",
+      "url": "/about"
+    },
+    {
+      "name": "Le maire",
+      "url": "/blog"
+    },
+    {
+      "name": "Suivi des actes",
+      "url": "/blog"
+    },
+    {
+      "name": "Appels d'offres",
+      "url": "/blog"
+    },
+    {
+      "name": "Projets et réalisations",
+      "url": "/terms-policy"
+    }
+  ]
+}

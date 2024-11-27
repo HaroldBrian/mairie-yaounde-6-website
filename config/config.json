@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Mairie Yaoundé VI",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "Yaoundé VI"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "copyright": "Copyright 2024 - Mairie de Yaoundé VI par [MK SARL](https:momscompanys.com )"
+  },
+
+  "contact_info": {
+    "phone": "+237 692 70 70 30",
+    "email": "info@yaounde-VI.com",
+    "location": "Mairie de Yaoundé VI est situé à le lieu"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Download Now",
+    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Andromeda-light Nextjs Blog Template"
+  },
+
+  "call_to_action": {
+    "enable": true,
+    "title": "Lettre d'information",
+    "content": "Restez informé(e) : Les dernières actualités et nouveautés pour vous ! </br> Votre rendez-vous avec les informations de votre mairie. ",
+    "button": {
+      "label": "Abonnez-vous maintenant !",
+      "link": "/"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}

@@ -1,195 +1,118 @@
-# [NextJS Material Kit](https://nextjs-material-kit.appseed-srv1.com/)
+<h1 align=center>Andromeda Light Nextjs</h1>
+<p align=center>Andromeda Light is a SAAS template for Nextjs</p>
+<h2 align="center"> <a target="_blank" href="https://andromeda-light-nextjs.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fandromeda-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
+</h2>
 
-> `Open-Source` **NextJS Starter** - [LIVE DEMO](https://nextjs-material-kit.appseed-srv1.com/). Forked from the [original version](https://bit.ly/37l2piJ) crafted by `Creative-Tim`, for accelerated development.
+<p align=center>
+  <a href="https://github.com/vercel/next.js/releases/tag/v13.0.6" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=13.0&color=000&logo=nextjs" />
+  </a>
 
-<br />
+  <a href="https://github.com/themefisher/andromeda-light-nextjs/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/themefisher/andromeda-light-nextjs" alt="license"></a>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/app-generator/nextjs-material-kit)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/app-generator/nextjs-material-kit)
+  <img src="https://img.shields.io/github/languages/code-size/themefisher/andromeda-light-nextjs" alt="code size">
 
-**NextJS Material Kit** makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
+  <a href="https://github.com/themefisher/andromeda-light-nextjs/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-light-nextjs" alt="contributors"></a>
+</p>
 
-<br />
+![andromeda-light](https://demo.gethugothemes.com/thumbnails/andromeda-light.png)
 
-> Product Roadmap 
 
-| Status | Item | info | 
-| --- | --- | --- |
-| ✅ | `Up-to-date Dependencies` | `React v18`, `NextJS v12.3` |
-| ✅ | `Tested NodeJS Versions` | `v16.x`, `v18.x` |
-| ✅ | `Typescript Migration` | - |
-| ✅ | `Blog Module` | Self hosted, Markdown Translation |
-| ❌ | `Auth0 Integration` | [info](https://github.com/vercel/next.js/tree/canary/examples/auth0) |
-| ❌ | `eCommerce Module` | self hosted, minimal solution |
-| ❌ | `eCommerce Headless` | Products pulled from a headless service |
-| ❌ | `Blog Headless` | Articles pulled from a headless service |
+## 🔑Key Features
+- 📄 7+ Pre-Designed Pages
+- 🚀 Google Page Speed score 100! (Desktop)
+- 🎨 Tailwind CSS
+- 🌍 SEO-Friendly
+- 📱 100% Responsive Design
+- ✉️ Supports Contact Form
+- 📊 Google Analytics support
+- 💬 Disqus Comment Support
+- 🖼️ Custom Logo Support
+- 👥 Multi-Author
+- 🌐 Semantic HTML Document Structure
+- 🎨 Includes All SCSS Files
+- 🌅 Image Optimized With Next/image
+- 🎨 Color and fonts variable in the config file
+- 📚 Related Posts Suggestion
+- ✏️ MDX Support with many built-in custom components
 
-<br />
+## 📄 7+ Pre-Designed Pages
+- 🏠 Home Page
+- ℹ️ About Page
+- 📞 Contact Page
+- 🎨 Elements Page
+- 🔒 Terms and Condition Page
+- 📚 Blog Page
+- 📝 Blog Single Page
 
-![NextJS Material Kit - open-source template Actively supported by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/190355309-0141db2c-2cd8-4ba9-8fe1-c5823ac2b3e7.jpg)
 
-<br />
+<!-- installation -->
+## ⚙️Installation
 
-This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. NextJS Material Kit is a great tool if you are looking to create a web presence for your web application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
+After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
 
-<br />
+### 🔧Install prerequisites (once for a machine)
 
-## Quick start
+- **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
 
-> 👉 **Step #1** - Clone the repo
+### 🖥️Local setup
 
-```bash
-$ git clone https://github.com/app-generator/nextjs-material-kit
-$ cd nextjs-material-kit
-```
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
-> 👉 **Step #2** - Install modules
-
-```bash
-$ yarn 
-// OR
-$ npm i
-```
-
-> 👉 **Step #3** - Start the app
-
-```bash
-$ yarn start
-// OR
-$ npm run start
-```
-
-> 👉 **Step #4** - Static Export
-
-```bash
-$ yarn export
-// OR
-$ npm run export
-```
-
-The static site is generate in the `out` directory. 
-
-<br />
-
-## File Structure
-
-Within the download you'll find the following directories and files:
+- Install dependencies
 
 ```
-nextjs-material-kit
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── next.config.js
-├── package.json
-├── Documentation
-│   ├── assets
-│   └── tutorial-components.html
-├── assets
-│   ├── css
-│   ├── img
-│   │   ├── examples
-│   │   └── faces
-│   ├── jss
-│   │   ├── nextjs-material-kit
-│   │   │   ├── components
-│   │   │   └── pages
-│   │   │       ├── componentsSections
-│   │   │       └── landingPageSections
-│   │   └── nextjs-material-kit.js
-│   └── scss
-│       ├── core
-│       │   ├── mixins
-│       │   └── variables
-│       ├── plugins
-│       └── nextjs-material-kit.scss
-├── pages
-│   ├── _app.js
-│   ├── _document.js
-│   ├── _error.js
-│   ├── components.js
-│   ├── index.js
-│   ├── landingpage.js
-│   ├── loginpage.js
-│   └── profilepage.js
-├── components
-│   ├── Badge
-│   │   └── Badge.js
-│   ├── Card
-│   │   ├── Card.js
-│   │   ├── CardBody.js
-│   │   ├── CardFooter.js
-│   │   └── CardHeader.js
-│   ├── Clearfix
-│   │   └── Clearfix.js
-│   ├── CustomButtons
-│   │   └── Button.js
-│   ├── CustomDropdown
-│   │   └── CustomDropdown.js
-│   ├── CustomInput
-│   │   └── CustomInput.js
-│   ├── CustomLinearProgress
-│   │   └── CustomLinearProgress.js
-│   ├── CustomTabs
-│   │   └── CustomTabs.js
-│   ├── Footer
-│   │   └── Footer.js
-│   ├── Grid
-│   │   ├── GridContainer.js
-│   │   └── GridItem.js
-│   ├── Header
-│   │   ├── Header.js
-│   │   └── HeaderLinks.js
-│   ├── InfoArea
-│   │   └── InfoArea.js
-│   ├── NavPills
-│   │   └── NavPills.js
-│   ├── PageChange
-│   │   └── PageChange.js
-│   ├── Pagination
-│   │   └── Pagination.js
-│   ├── Parallax
-│   │   └── Parallax.js
-│   ├── Snackbar
-│   │   └── SnackbarContent.js
-│   └── Typography
-│       ├── Danger.js
-│       ├── Info.js
-│       ├── Muted.js
-│       ├── Primary.js
-│       ├── Quote.js
-│       ├── Small.js
-│       ├── Success.js
-│       └── Warning.js
-└── pages-sections
-    ├── Components-Sections
-    │   ├── SectionBasics.js
-    │   ├── SectionCarousel.js
-    │   ├── SectionCompletedExamples.js
-    │   ├── SectionDownload.js
-    │   ├── SectionExamples.js
-    │   ├── SectionJavascript.js
-    │   ├── SectionLogin.js
-    │   ├── SectionNavbars.js
-    │   ├── SectionNotifications.js
-    │   ├── SectionPills.js
-    │   ├── SectionTabs.js
-    │   └── SectionTypography.js
-    └── LandingPage-Sections
-        ├── ProductSection.js
-        ├── TeamSection.js
-        └── WorkSection.js
+npm install
 ```
 
-<br />
+- Run locally
 
-## License
+```
+npm run dev
+```
 
-[@MIT](./LICENSE.md)
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
-<br />
+## 🏗️Production Build
 
----
-[NextJS Material Kit](https://nextjs-material-kit.appseed-srv1.com/) - Actively supported by `AppSeed` and `Creative-Tim`. 
+After finishing all the customization, you can create a production build by running this command.
+
+```
+npm run build
+```
+
+<!-- reporting issue -->
+## 🐞Reporting Issues
+
+We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/andromeda-light-nextjs/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/andromeda-light-nextjs/issues).
+
+<!-- support -->
+## 💬Technical Support or Questions (Paid)
+
+If you have questions or need help integrating the product please [contact us](https://themefisher.com/contact) instead of opening an issue.
+
+<!-- licence -->
+## 📄License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/andromeda-light-nextjs/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+## 👨‍💻Hire Us
+
+Besides developing unique, blazing-fast Nextjs templates, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Nextjs.
+
+If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
+[Contact Page](https://themefisher.com/contact)**
+
+## 👉Nextjs Templates By Us
+
+<a href="https://themefisher.com/products/bigspring-light-nextjs">
+<img src="https://demo.gethugothemes.com/thumbnails/bigspring.png" height="300" width="400"/>
+<p>Bigspring Light Nextjs</p>
+</a>
