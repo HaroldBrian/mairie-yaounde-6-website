@@ -4,7 +4,7 @@ import menu from "@config/menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
-import { CgClose, CgMenu } from "react-icons/cg";
+import { CgClose, CgMenu, CgSearch } from "react-icons/cg";
 
 const Header = () => {
   // distructuring the main menu from menu object
@@ -101,14 +101,12 @@ const Header = () => {
             ))}
           </ul>
           <div className="order-1 ml-auto flex items-center md:ml-0">
-            {/* {config.nav_button.enable && (
-              <Link
-                className="btn btn-primary hidden lg:flex"
-                href={config.nav_button.link}
-              >
-                {config.nav_button.label}
-              </Link>
-            )} */}
+            <Link
+              className="p-1.5 mr-2 rounded-md text-primary duration-200 text-xl btn-outline-primary flex"
+              href="#"
+            >
+              <CgSearch />
+            </Link>
 
             {/* navbar toggler */}
             {showMenu ? (

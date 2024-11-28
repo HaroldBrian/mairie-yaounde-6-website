@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const HomeBanner = ({ banner: bannerData, brands }) => {
+const HomeBanner2 = ({ banner: bannerData, brands }) => {
   useEffect(() => {
     const ctx2 = gsap.context(() => {
       const banner = document.querySelector(".banner");
@@ -221,4 +221,4 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
   );
 };
 
-export default HomeBanner;
+export default HomeBanner2;

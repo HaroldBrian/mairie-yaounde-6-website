@@ -4,7 +4,7 @@ banner:
   image: /images/banner-app.png
   link:
     label: À propos de la Mairie
-    href: "/"
+    href: "/about"
 
 ##brands
 brands:
@@ -25,7 +25,7 @@ features:
   description: Profitez de nos services en ligne pour vos demandes d’actes administratifs, le suivi des projets en cours, </br> et bien plus encore. Accédez facilement à vos outils depuis chez vous.
   list:
     - icon: "lock" # feather icon: https://feathericons.com/
-      title: Actes administratifs
+      title: Gestion d'actes administratifs
       content: Obtenez vos actes de naissance, de mariage ou de décès en quelques clics.
     - icon: "wind"
       title: Prise de rendez-vous
@@ -35,7 +35,7 @@ features:
       content: Réglez vos taxes foncières ou d’habitation en ligne de manière sécurisée.
     - icon: "link"
       title: Suivi des projets
-      content: Restez informé(e) de l’avancée des travaux et des projets en cours dans votre commune.
+      content: Restez informé de l’avancée des travaux et des projets en cours dans votre commune.
     - icon: "lock"
       title: Inscription aux événements
       content: Participez aux événements de la commune ou inscrivez-vous à des activités locales.
@@ -45,14 +45,14 @@ features:
 
 news:
   title: Actualités et Événements
-  sub_title: Restez informé(e) !
+  sub_title: Restez informé !
   description: Retrouvez ici les dernières nouvelles de la commune, les événements à venir, et les projets en cours. </br> Ne manquez rien de ce qui se passe près de chez vous.
   link:
     label: CONSULTEZ TOUTES LES ACTUALITES
     href: "/"
   list:
     - icon: "lock" # feather icon: https://feathericons.com/
-      title: Demandes d’actes administratifs
+      title: Gestion d’actes administratifs
       content: Obtenez vos actes de naissance, de mariage ou de décès en quelques clics.
     - icon: "wind"
       title: Prise de rendez-vous

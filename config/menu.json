@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "name": "Votre Mairie",
+      "url": "/about"
+    },
+    {
       "name": "Actualités",
       "url": "/posts"
     },
@@ -69,6 +73,14 @@
       "url": "/about"
     },
     {
+      "name": "Centres d’Éducation et de Formation",
+      "url": "/about"
+    },
+    {
+      "name": "Centres d’Éducation et de Formation",
+      "url": "/about"
+    },
+    {
       "name": "Autres Services",
       "url": "/about"
     }
@@ -84,6 +96,14 @@
     },
     {
       "name": "Suivi des actes",
+      "url": "/blog"
+    },
+    {
+      "name": "Appels d'offres",
+      "url": "/blog"
+    },
+    {
+      "name": "Appels d'offres",
       "url": "/blog"
     },
     {

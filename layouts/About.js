@@ -13,6 +13,7 @@ const About = ({ data }) => {
   const { frontmatter } = data;
   const {
     title,
+    content,
     about_us,
     works,
     mission,
@@ -25,7 +26,7 @@ const About = ({ data }) => {
   return (
     <>
       <section className="section pt-0">
-        <Banner title={title} />
+        <Banner title={title} content={content} />
         {/* About */}
         <div className="section container">
           <div className="row items-center justify-center">
@@ -81,21 +82,23 @@ const About = ({ data }) => {
         </div>
 
         {/* Works */}
-        <div className="section container">
-          <div className="animate text-center">
-            <p>{works.subtitle}</p>
-            {markdownify(works.title, "h2", "section-title mt-4")}
-            {markdownify(works.content, "p", "mt-10")}
-          </div>
-          <div className="row mt-10 justify-center">
-            {works.list.map((work, index) => (
-              <div key={"work-" + index} className="mt-10 md:col-6 lg:col-5">
-                <div className="animate text-center md:px-6 xl:px-12">
-                  {markdownify(work.title, "h3", "h4")}
-                  {markdownify(work.content, "p", "mt-2")}
+        <div className="section bg-border-secondary">
+          <div className="container">
+            <div className="animate text-center">
+              <p>{works.subtitle}</p>
+              {markdownify(works.title, "h2", "section-title mt-4")}
+              {markdownify(works.content, "p", "mt-10")}
+            </div>
+            <div className="row mt-10 justify-center">
+              {works.list.map((work, index) => (
+                <div key={"work-" + index} className="mt-10 md:col-6 lg:col-5">
+                  <div className="animate text-center md:px-6 xl:px-12">
+                    {markdownify(work.title, "h3", "h4")}
+                    {markdownify(work.content, "p", "mt-2")}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
@@ -154,8 +157,8 @@ const About = ({ data }) => {
         </div>
 
         {/* Video */}
-        <div className="container-xl relative">
-          <div className="bg-theme absolute left-0 top-0 w-full">
+        <div className="container-xl banner h-full  relative">
+          <div className="bg-theme banner-bg absolute left-0 top-0 w-full">
             <Circle
               className="left-[7%] top-[21%]"
               width={32}
@@ -261,31 +264,33 @@ const About = ({ data }) => {
         </div>
 
         {/* Members */}
-        <div className="section container">
-          <div className="animate text-center">
-            <p>{our_member.subtitle}</p>
-            {markdownify(our_member.title, "h2", "section-title mt-4")}
-            {markdownify(our_member.content, "p", "mt-16")}
-          </div>
-          <div className="row justify-center">
-            <div className="lg:col-10">
-              <div className="row">
-                {our_member.list.map((member, index) => (
-                  <div
-                    key={("member-", index)}
-                    className="animate mt-10 text-center md:col-6 lg:col-4"
-                  >
-                    <ImageFallback
-                      className="mx-auto rounded-full shadow-[10px_10px_0] shadow-primary/10"
-                      src={member.image}
-                      width={245}
-                      height={245}
-                      alt={member.name}
-                    />
-                    <h4 className="mt-8">{member.name}</h4>
-                    <p className="mt-3">{member.field}</p>
-                  </div>
-                ))}
+        <div className="section bg-black/10">
+          <div className="container">
+            <div className="animate text-center">
+              <p>{our_member.subtitle}</p>
+              {markdownify(our_member.title, "h2", "section-title mt-4")}
+              {markdownify(our_member.content, "p", "mt-16")}
+            </div>
+            <div className="row justify-center">
+              <div className="lg:col-10">
+                <div className="row">
+                  {our_member.list.map((member, index) => (
+                    <div
+                      key={("member-", index)}
+                      className="animate mt-10 text-center md:col-6 lg:col-4"
+                    >
+                      <ImageFallback
+                        className="mx-auto rounded-full shadow-[10px_10px_0] shadow-primary/10"
+                        src={member.image}
+                        width={245}
+                        height={245}
+                        alt={member.name}
+                      />
+                      <h4 className="mt-8">{member.name}</h4>
+                      <p className="mt-3">{member.field}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -324,7 +329,6 @@ const About = ({ data }) => {
           </div>
         </div>
       </section>
-      <Cta />
     </>
   );
 };

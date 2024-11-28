@@ -3,9 +3,9 @@
     "title": "Mairie Yaoundé VI",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
-    "logo_width": "240",
-    "logo_height": "34",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "60",
     "logo_text": "Yaoundé VI"
   },
 
@@ -18,14 +18,16 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "copyright": "Copyright 2024 - Mairie de Yaoundé VI par [MK SARL](https:momscompanys.com )"
+    "footer_content": "Votre partenaire pour un développement durable et inclusif. Nous mettons en œuvre des projets qui favorisent un développement durable en préservant l’environnement et en garantissant l’accessibilité des infrastructures.",
+    "copyright": "Tous droits réservés. © 2024 Mairie de Yaoundé VI par [MK SARL](https:momscompanys.com )"
   },
 
   "contact_info": {
-    "phone": "+237 692 70 70 30",
+    "phone1": "(+237) 692 70 70 30",
+    "phone2": "(+237) 692 70 70 30",
     "email": "info@yaounde-VI.com",
-    "location": "Mairie de Yaoundé VI est situé à le lieu"
+    "location": "Mairie de Yaoundé VI est situé à le lieu",
+    "opening": "Lundi à Vendredi de 8h00 à 17h00"
   },
 
   "nav_button": {
@@ -43,7 +45,7 @@
   "call_to_action": {
     "enable": true,
     "title": "Lettre d'information",
-    "content": "Restez informé(e) : Les dernières actualités et nouveautés pour vous ! </br> Votre rendez-vous avec les informations de votre mairie. ",
+    "content": "Restez informé : Les dernières actualités et nouveautés pour vous ! </br> Votre rendez-vous avec les informations de votre mairie. ",
     "button": {
       "label": "Abonnez-vous maintenant !",
       "link": "/"

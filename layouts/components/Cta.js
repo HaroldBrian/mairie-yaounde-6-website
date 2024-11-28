@@ -9,15 +9,34 @@ function Cta() {
   if (!enable) return;
 
   return (
-    <section className="cta section pt-0">
+    <section className="cta section banner pt-0">
       <div className="container-xl">
         <div className="section relative px-4 text-center">
           <div className="animate">
             {markdownify(title, "h2", "section-title")}
             {markdownify(content, "p", "mt-10")}
-            <Link href={button.link} className="btn btn-primary mt-10">
-              {button.label}
-            </Link>
+
+            <div className="animate lg:col-5 mx-auto mt-8">
+              <form
+                method="POST"
+                action={config.params.contact_form_action}
+                className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.08)]"
+              >
+                <div className="mb-6">
+                  <input
+                    className="form-input w-full"
+                    name="email"
+                    placeholder="Votre adresse mail"
+                    type="email"
+                    required
+                  />
+                </div>
+
+                <button className="btn btn-primary block w-full">
+                  {button.label}
+                </button>
+              </form>
+            </div>
           </div>
           <div className="bg-theme animated-bg absolute top-0 left-0 w-full after:hidden">
             <ImageFallback

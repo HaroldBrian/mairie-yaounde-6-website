@@ -21,13 +21,13 @@ const BlogPagination = async ({ params }) => {
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
   const { frontmatter } = postIndex;
-  const { title } = frontmatter;
+  const { title, content } = frontmatter;
 
   return (
     <GSAPWrapper>
       <SeoMeta title={title} />
       <section className="section pt-0">
-        <Banner title={title} />
+        <Banner title={title} content={content} />
         <div className="container">
           <div className="row justify-center pb-16 pt-20 ">
             {currentPosts.map((post, i) => (
@@ -43,8 +43,6 @@ const BlogPagination = async ({ params }) => {
           />
         </div>
       </section>
-      {/* CTA */}
-      <Cta />
     </GSAPWrapper>
   );
 };

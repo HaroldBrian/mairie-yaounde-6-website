@@ -21,7 +21,7 @@ const SpecialFeatures = ({ speciality }) => {
             {markdownify(
               speciality.primary.title,
               "h2",
-              "mt-4 section-title bar-left",
+              "mt-4 section-title bar-left"
             )}
             {markdownify(speciality.primary.description, "p", "mt-10")}
           </div>
@@ -41,7 +41,7 @@ const SpecialFeatures = ({ speciality }) => {
             {markdownify(
               speciality.secondary.title,
               "h2",
-              "mt-4 section-title bar-left",
+              "mt-4 section-title bar-left"
             )}
             {markdownify(speciality.secondary.description, "p", "mt-10")}
           </div>

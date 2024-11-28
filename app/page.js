@@ -2,6 +2,7 @@ import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import Features from "@layouts/partials/Features";
 import News from "@layouts/partials/News";
 import HomeBanner from "@layouts/partials/HomeBanner";
+import HomeBanner2 from "@layouts/partials/HomeBanner2";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import ShortIntro from "@layouts/partials/ShortIntro";
 import SpecialFeatures from "@layouts/partials/SpecialFeatures";
@@ -14,9 +15,10 @@ const Home = async () => {
   return (
     <GSAPWrapper>
       <SeoMeta title="Votre mairie" />
+      {/* <HomeBanner2 banner={banner} brands={brands} /> */}
       <HomeBanner banner={banner} brands={brands} />
-      <Features features={features} />
       <News news={news} />
+      <Features features={features} />
       <ShortIntro intro={intro} />
       <SpecialFeatures speciality={speciality} />
     </GSAPWrapper>

@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const News = ({ news }) => {
   const paginationRef = useRef(null);
   return (
-    <section className="section">
+    <section className="section  bg-border-secondary">
       <div className="container text-center">
         <div className="animate">
           <p className="uppercase">{news.sub_title}</p>
@@ -42,7 +42,7 @@ const News = ({ news }) => {
           >
             {news.list.map((item, index) => (
               <SwiperSlide key={"feature-" + index}>
-                <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
+                <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-border-secondary hover:shadow-none">
                   <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
                     <FeatherIcon icon={item.icon} />
                   </div>
@@ -58,7 +58,7 @@ const News = ({ news }) => {
 
           <div className="banner-btn mt-12">
             <Link
-              className="btn btn-outline-primary px-20 rounded-md text-lg"
+              className=" btn-primary py-4 px-20 rounded-md text-lg"
               href={news.link.href}
             >
               {news.link.label}

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const { copyright, footer_content } = config.params;
-  const { email, phone, location } = config.contact_info;
+  const { email, phone1, phone2, location, opening } = config.contact_info;
   return (
     <footer className="">
       <div className="container">
@@ -62,12 +62,15 @@ const Footer = () => {
               <li>{markdownify(location)}</li>
             </ul>
 
-            {(phone || email) && (
+            {(phone1 || phone2 || email) && (
               <>
                 <h3 className="h6 mt-5">Contacts</h3>
                 <ul className="mt-3 leading-6 space-y-2">
                   <li>
-                    <Link href={`tel:${phone}`}>{phone}</Link>
+                    <Link href={`tel:${phone1}`}>{phone1}</Link>
+                  </li>
+                  <li>
+                    <Link href={`tel:${phone2}`}>{phone2}</Link>
                   </li>
                   <li>
                     <Link href={`mailto:${email}`}>{email}</Link>
@@ -75,6 +78,11 @@ const Footer = () => {
                 </ul>
               </>
             )}
+
+            <h3 className="h6 mt-5">Horaires d’ouverture</h3>
+            <ul className="mt-3 leading-6 space-y-4">
+              <li>{markdownify(opening)}</li>
+            </ul>
           </div>
         </div>
         {/* copyright */}
