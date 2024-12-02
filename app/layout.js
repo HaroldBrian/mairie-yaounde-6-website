@@ -7,10 +7,16 @@ import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Cta from "@layouts/components/Cta";
 import ScrollToTop from "@layouts/components/ScrollToTop";
+import { Suspense } from "react";
+import Loading from "@layouts/components/Loading";
 
 import "../styles/style.scss";
 
-export default function RootLayout({ children }) {
+export async function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export default async function RootLayout({ children }) {
   // import google font css
   const pf = theme.fonts.font_family.primary;
   const sf = theme.fonts.font_family.secondary;
@@ -57,10 +63,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning={true}>
+        {/* {await wait(300)} */}
         <TwSizeIndicator />
         <Header />
         <ScrollToTop />
-        {children}
+
+        <Suspense fallback={<Loading />}>{children}</Suspense>
 
         <Cta />
         <Footer />

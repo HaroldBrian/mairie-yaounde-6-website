@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const { copyright, footer_content } = config.params;
-  const { email, phone1, phone2, location, opening } = config.contact_info;
+  const { email, phone, postal, location, opening } = config.contact_info;
   return (
     <footer className="">
       <div className="container">
@@ -60,17 +60,15 @@ const Footer = () => {
             <h3 className="h6 mt-5">Localisation</h3>
             <ul className="mt-3 leading-6 space-y-4">
               <li>{markdownify(location)}</li>
+              <li>{markdownify(postal)}</li>
             </ul>
 
-            {(phone1 || phone2 || email) && (
+            {(phone || email) && (
               <>
                 <h3 className="h6 mt-5">Contacts</h3>
                 <ul className="mt-3 leading-6 space-y-2">
                   <li>
-                    <Link href={`tel:${phone1}`}>{phone1}</Link>
-                  </li>
-                  <li>
-                    <Link href={`tel:${phone2}`}>{phone2}</Link>
+                    <Link href={`tel:${phone}`}>{phone}</Link>
                   </li>
                   <li>
                     <Link href={`mailto:${email}`}>{email}</Link>

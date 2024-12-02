@@ -1,14 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ImageFallback from "@layouts/components/ImageFallback";
 
 const News = ({ news }) => {
   const paginationRef = useRef(null);
+  const { summary_length } = config.settings;
   return (
     <section className="section  bg-border-secondary">
       <div className="container text-center">
@@ -41,13 +44,30 @@ const News = ({ news }) => {
             }}
           >
             {news.list.map((item, index) => (
-              <SwiperSlide key={"feature-" + index}>
-                <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-border-secondary hover:shadow-none">
-                  <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
-                    <FeatherIcon icon={item.icon} />
+              <SwiperSlide key={"news-" + index}>
+                <div className="bg-white group m-4 rounded-md border border-transparent shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-border-secondary hover:shadow-none overflow-hidden">
+                  {item.image && (
+                    <Link href="/">
+                      <ImageFallback
+                        className="w-full object-cover group-hover:scale-110 transition-all duration-500"
+                        src={item.image}
+                        alt={item.title}
+                        width={570}
+                        height={335}
+                      />
+                    </Link>
+                  )}
+                  <div className="p-6 text-left">
+                    <h2 className="h5">
+                      <Link
+                        href="/"
+                        className="block hover:text-primary hover:underline"
+                      >
+                        {item.content.slice(0, 95)}...
+                      </Link>
+                    </h2>
+                    <p className="mt-4">{item.title}</p>
                   </div>
-                  <h3 className="h4 mb-5 mt-6">{item.title}</h3>
-                  <p>{item.content}</p>
                 </div>
               </SwiperSlide>
             ))}

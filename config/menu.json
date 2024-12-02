@@ -14,43 +14,43 @@
     },
     {
       "name": "Réalisations et Projets",
-      "url": "/about",
+      "url": "/services",
       "hasChildren": true,
       "children": [
         {
           "name": "Réalisations",
-          "url": "/about"
+          "url": "/services"
         },
         {
           "name": "Projets en Cours",
-          "url": "/about"
+          "url": "/services"
         },
         {
           "name": "Implication Citoyenne ",
-          "url": "/about"
+          "url": "/services"
         }
       ]
     },
     {
       "name": "Nos Services",
-      "url": "/elements",
+      "url": "/services",
       "hasChildren": true,
       "children": [
         {
-          "name": "Démarches Pratiques et Procédures Administratives",
-          "url": "/about"
+          "name": "Services directement rattachés au Maire",
+          "url": "/services"
         },
         {
-          "name": "Lieux Touristiques et de Loisirs",
-          "url": "/about"
+          "name": "Services rattachés au Secrétariat Général",
+          "url": "/services"
         },
         {
           "name": "Centres d’Éducation et de Formation",
-          "url": "/about"
+          "url": "/services"
         },
         {
           "name": "Autres Services",
-          "url": "/about"
+          "url": "/services"
         }
       ]
     },
@@ -61,58 +61,66 @@
   ],
   "footer_service": [
     {
-      "name": "Démarches Pratiques et Procédures Administratives",
-      "url": "/about"
+      "name": "Le Cabinet du Maire",
+      "url": "/"
     },
     {
-      "name": "Lieux Touristiques et de Loisirs",
-      "url": "/about"
+      "name": "Le Secrétariat du Maire",
+      "url": "/"
     },
     {
-      "name": "Centres d’Éducation et de Formation",
-      "url": "/about"
+      "name": "Le Service de la Communication et des Relations publiques",
+      "url": "/"
     },
     {
-      "name": "Centres d’Éducation et de Formation",
-      "url": "/about"
+      "name": "Le Bureau d'Ordre et du Courrier",
+      "url": "/"
     },
     {
-      "name": "Centres d’Éducation et de Formation",
-      "url": "/about"
+      "name": "La Police Municipale",
+      "url": "/"
     },
     {
-      "name": "Autres Services",
-      "url": "/about"
+      "name": "Le Service du Patrimoine",
+      "url": "/"
+    },
+    {
+      "name": " La Cellule d'Appui au Développement Local et à la Coopération Décentralisée",
+      "url": "/"
     }
   ],
   "footer": [
     {
-      "name": "A propos",
+      "name": "Accueil",
+      "url": "/"
+    },
+    {
+      "name": "Votre Mairie",
       "url": "/about"
     },
     {
-      "name": "Le maire",
+      "name": "Actualités",
       "url": "/blog"
     },
     {
-      "name": "Suivi des actes",
-      "url": "/blog"
+      "name": "Réalisations",
+      "url": "/"
     },
     {
-      "name": "Appels d'offres",
-      "url": "/blog"
+      "name": "Projets En Cours",
+      "url": "/"
     },
     {
-      "name": "Appels d'offres",
-      "url": "/blog"
+      "name": "Implication Citoyenne",
+      "url": "/"
     },
     {
-      "name": "Appels d'offres",
-      "url": "/blog"
+      "name": "Autres Services",
+      "url": "/"
     },
     {
-      "name": "Projets et réalisations",
-      "url": "/terms-policy"
+      "name": "Nous Contacter",
+      "url": "/Contact"
     }
   ]
 }

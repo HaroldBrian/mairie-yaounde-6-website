@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Mairie Yaoundé VI",
+    "title": "Commune de Yaoundé 6ème",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "fa6èmecon": "/images/fa6èmecon.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "60",
-    "logo_text": "Yaoundé VI"
+    "logo_text": "Yaoundé 6ème"
   },
 
   "settings": {
@@ -18,28 +18,22 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Votre partenaire pour un développement durable et inclusif. Nous mettons en œuvre des projets qui favorisent un développement durable en préservant l’environnement et en garantissant l’accessibilité des infrastructures.",
-    "copyright": "Tous droits réservés. © 2024 Mairie de Yaoundé VI par [MK SARL](https:momscompanys.com )"
+    "footer_content": "Votre partenaire pour un développement durable et inclusif. </br> </br> <i> MAIRE JACQUES YOKI ONANA : L'hygiène et la salubrité sont une affaire de tous et de chacun : commençons par balayer devant notre porte et Yaoundé 6 sera propre.</i>",
+    "copyright": "Tous droits réservés. © 2024 Mairie de Yaoundé 6ème par [MK SARL](https:momscompanys.com )"
   },
 
   "contact_info": {
-    "phone1": "(+237) 692 70 70 30",
-    "phone2": "(+237) 692 70 70 30",
-    "email": "info@yaounde-VI.com",
-    "location": "Mairie de Yaoundé VI est situé à le lieu",
+    "phone": "(237) 222 31 34 95",
+    "email": "yaounde6@yahoo.fr",
+    "postal": "Boîte Postale : 3759 - Yaoundé - Messa",
+    "location": "Yaoundé, 6e Arrondissement, quartier Étoug-Ébe aux en6èmerons du Lycée Bilingue",
     "opening": "Lundi à Vendredi de 8h00 à 17h00"
   },
 
-  "nav_button": {
-    "enable": true,
-    "label": "Download Now",
-    "link": "https://themefisher.com/products/andromeda-light-nextjs"
-  },
-
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "MK SARL",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Andromeda-light Nextjs Blog Template"
+    "meta_description": "Commune d'arrondissement de Yaoundé 6"
   },
 
   "call_to_action": {
@@ -54,7 +48,7 @@
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "MK SARL",
     "settings": {}
   }
 }

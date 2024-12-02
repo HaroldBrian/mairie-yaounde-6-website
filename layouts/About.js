@@ -15,7 +15,7 @@ const About = ({ data }) => {
     title,
     content,
     about_us,
-    works,
+    services,
     mission,
     video,
     clients,
@@ -81,20 +81,23 @@ const About = ({ data }) => {
           </div>
         </div>
 
-        {/* Works */}
+        {/* services */}
         <div className="section bg-border-secondary">
           <div className="container">
             <div className="animate text-center">
-              <p>{works.subtitle}</p>
-              {markdownify(works.title, "h2", "section-title mt-4")}
-              {markdownify(works.content, "p", "mt-10")}
+              <p>{services.subtitle}</p>
+              {markdownify(services.title, "h2", "section-title mt-4")}
+              {markdownify(services.content, "p", "mt-10")}
             </div>
             <div className="row mt-10 justify-center">
-              {works.list.map((work, index) => (
-                <div key={"work-" + index} className="mt-10 md:col-6 lg:col-5">
-                  <div className="animate text-center md:px-6 xl:px-12">
-                    {markdownify(work.title, "h3", "h4")}
-                    {markdownify(work.content, "p", "mt-2")}
+              {services.list.map((service, index) => (
+                <div
+                  key={"service-" + index}
+                  className="mt-10 md:col-6 lg:col-5"
+                >
+                  <div className="animate text-left md:px-6 xl:px-12">
+                    {markdownify(service.title, "h3", "text-center", "h4")}
+                    {markdownify(service.content, "p", "mt-2")}
                   </div>
                 </div>
               ))}
@@ -277,7 +280,7 @@ const About = ({ data }) => {
                   {our_member.list.map((member, index) => (
                     <div
                       key={("member-", index)}
-                      className="animate mt-10 text-center md:col-6 lg:col-4"
+                      className="animate mt-10 text-center md:col-6 lg:col-3"
                     >
                       <ImageFallback
                         className="mx-auto rounded-full shadow-[10px_10px_0] shadow-primary/10"
@@ -308,18 +311,21 @@ const About = ({ data }) => {
               <div className="row  justify-center">
                 {our_office.countries.map((country, index) => (
                   <div
-                    key={("country-", index)}
+                    key={("project-", index)}
                     className="animate mt-10 md:col-6 xl:col-3"
                   >
-                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
-                      <ImageFallback
+                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]  min-h-[350px]">
+                      {/* <ImageFallback
                         // className="mx-auto"
                         src={country.flag}
                         width={80}
                         height={80}
                         alt={country.name}
-                      />
-                      <h5 className="h4 mt-2">{country.name}</h5>
+                      /> */}
+
+                      <h5 className="h4 mt-2 hover:text-primary hover:underline cursor-pointer">
+                        {country.name}
+                      </h5>
                       <p className="mt-2">{country.location}</p>
                     </div>
                   </div>
