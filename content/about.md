@@ -61,18 +61,18 @@ our_member:
   title: Les Adjoints du Maire
   content: La Commune d'Arrondissement de Yaoundé 6e est placée sous l'autorité d'un Maire assisté de 04 (quatre)Adjoints. </br>Les adjoints du maire jouent un rôle clé dans la gestion quotidienne de la commune et l’accomplissement des missions de la mairie.
   list:
-    - name: NGA NOGMO PIE CLAUDE
+    - name: M. NGA NOGMO PIE CLAUDE
       field: 1er Adjoint au Maire
       image: /images/about/team/01.jpg
-    - name: NGAH VIRGINIE SIMONE
+    - name: Mme. NGAH VIRGINIE SIMONE
       field: 2ème Adjoint au Maire
       image: /images/about/team/02.jpg
-    - name: ZOUNOU KETCHOUONZO
+    - name: M. ZOUNOU KETCHOUONZO
       field: 3ème Adjoint au Maire
-      image: /images/about/team/03.jpg
-    - name: NTSAMA MENDOUGA JOSEPH
-      field: 4ème Adjoint au Maire
       image: /images/about/team/01.jpg
+    - name: M. NTSAMA MENDOUGA JOSEPH
+      field: 4ème Adjoint au Maire
+      image: /images/about/team/02.jpg
 
 ## office
 our_office:
