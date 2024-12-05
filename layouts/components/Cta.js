@@ -39,12 +39,6 @@ function Cta() {
             </div>
           </div>
           <div className="bg-theme animated-bg absolute top-0 left-0 w-full after:hidden">
-            <ImageFallback
-              src="/images/wave.svg"
-              fill={true}
-              sizes="100vw"
-              alt="bg wave"
-            />
             <Circle
               className="left-[10%] top-12"
               width={32}

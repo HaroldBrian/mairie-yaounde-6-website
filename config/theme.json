@@ -7,7 +7,8 @@
         "border": "#dee2e6",
         "border_secondary": "#cce9dd",
         "theme_light": "#eaf6f0",
-        "theme_dark": "#1a202c"
+        "theme_dark": "#0f2a1d",
+        "theme_dark2": "#0f2a1d"
       },
 
       "text_color": {

@@ -25,7 +25,9 @@ const Post = ({ post, i }) => {
             href={`/${blog_folder}/${post.slug}`}
             className="block hover:text-primary hover:underline"
           >
-            {post.frontmatter.title}
+            {post.frontmatter.title.length < 70
+              ? post.frontmatter.title
+              : post.frontmatter.title.slice(0, 70) + "..."}
           </Link>
         </h2>
         <p className="mt-4">

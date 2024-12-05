@@ -1,6 +1,5 @@
 "use client";
 
-import Circle from "@layouts/components/Circle";
 import ImageFallback from "@layouts/components/ImageFallback";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
@@ -9,7 +8,7 @@ import { useEffect } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const HomeBanner2 = ({ banner: bannerData, brands }) => {
+export default function HomeBanner2({ banner: bannerData, brands }) {
   useEffect(() => {
     const ctx2 = gsap.context(() => {
       const banner = document.querySelector(".banner");
@@ -90,135 +89,86 @@ const HomeBanner2 = ({ banner: bannerData, brands }) => {
   }, []);
 
   return (
-    <section className="section banner pt-0">
-      <div className="container-xl">
-        <div className="relative">
-          <div className="bg-theme banner-bg col-12 absolute left-0 top-0">
-            <Circle
-              className="circle left-[10%] top-12"
-              width={32}
-              height={32}
-              fill={false}
-            />
-            <Circle
-              className="circle left-[2.5%] top-[29%]"
-              width={85}
-              height={85}
-            />
-            <Circle
-              className="circle bottom-[48%] left-[22%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[37%] left-[15%]"
-              width={47}
-              height={47}
-              fill={false}
-            />
-            <Circle
-              className="circle bottom-[13%] left-[6%]"
-              width={62}
-              height={62}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[12%] top-[15%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle right-[2%] top-[30%]"
-              width={73}
-              height={73}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[19%] top-[48%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[33%] top-[54%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[20%] right-[3%]"
-              width={65}
-              height={65}
+    <section className="section banner pt-0 bg-white">
+      <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-10 -z-20 transform-gpu overflow-hidden sm:-top-24"
+        >
+          <div className="blur-sm bg-gray-200 max-h-[700px] md:max-h-[525px] lg:max-h-[850px]">
+            <ImageFallback
+              className="banner-img opacity-0 w-full object-cover"
+              src={bannerData.image}
+              width={1170}
+              height={666}
+              priority={true}
+              alt=""
             />
           </div>
-          <div className="row overflow-hidden rounded-2xl">
-            <div className="col-12">
-              <div className="row relative justify-center pb-10">
-                <div className="banner-content col-10 pb-10 pt-20 text-center">
-                  {markdownify(
-                    bannerData.title,
-                    "h1",
-                    "mb-8 banner-title opacity-0"
-                  )}
-                  <div className="banner-btn opacity-0">
-                    <Link
-                      className="btn btn-primary"
-                      href={bannerData.link.href}
-                    >
-                      {bannerData.link.label}
-                    </Link>
+        </div>
+
+        <div className="mx-auto max-w-4xl py-12 sm:pb-40 sm:pt-8 lg:py-56">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm text-gray-100 ring-1 ring-gray-100/80 hover:ring-gray-100/20 duration-200 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
+              Votre plateforme d'informations et de sensibilisation.{" "}
+              <Link href="#" className="font-semibold text-primary">
+                <span aria-hidden="true" className="absolute inset-0" />
+                En Plus <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </div>
+          <div className="text-center">
+            <h1 className="">
+              {markdownify(
+                bannerData.title,
+                "",
+                "mb-8 banner-title opacity-0 [text-shadow:_1px_2px_1px_rgb(0_0_0_/_50%)] text-balance tracking-tight text-white text-3xl lg:text-6xl sm:text-4xl"
+              )}
+            </h1>
+
+            <div className="animate banner-btn opacity-0 mt-12">
+              <Link className="btn btn-primary" href={bannerData.link.href}>
+                {bannerData.link.label}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="row border-y border-border py-5">
+          <div className="animate from-right col-12">
+            <Swiper
+              loop={true}
+              slidesPerView={3}
+              breakpoints={{
+                992: {
+                  slidesPerView: 5,
+                },
+              }}
+              spaceBetween={20}
+              modules={[Autoplay]}
+              autoplay={{ delay: 3000 }}
+            >
+              {brands.map((brand, index) => (
+                <SwiperSlide
+                  className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                  key={"brand-" + index}
+                >
+                  <div className="relative h-full">
+                    <ImageFallback
+                      className="object-contain"
+                      src={brand}
+                      sizes="100vw"
+                      alt=""
+                      fill={true}
+                      priority={true}
+                    />
                   </div>
-                </div>
-                <div className="col-10">
-                  <ImageFallback
-                    className="banner-img opacity-0"
-                    src={bannerData.image}
-                    width={1170}
-                    height={666}
-                    priority={true}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row border-y border-border py-5">
-            <div className="animate from-right col-12">
-              <Swiper
-                loop={true}
-                slidesPerView={3}
-                breakpoints={{
-                  992: {
-                    slidesPerView: 5,
-                  },
-                }}
-                spaceBetween={20}
-                modules={[Autoplay]}
-                autoplay={{ delay: 3000 }}
-              >
-                {brands.map((brand, index) => (
-                  <SwiperSlide
-                    className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
-                    key={"brand-" + index}
-                  >
-                    <div className="relative h-full">
-                      <ImageFallback
-                        className="object-contain"
-                        src={brand}
-                        sizes="100vw"
-                        alt=""
-                        fill={true}
-                        priority={true}
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default HomeBanner2;
+}

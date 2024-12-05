@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import Circle from "./Circle";
 import ImageFallback from "./ImageFallback";
 
-const Banner = ({ title, content }) => {
+const BannerImg = ({ title, content }) => {
   const banner = useRef(null);
 
   //banner animation
@@ -67,9 +67,13 @@ const Banner = ({ title, content }) => {
     <div className="banner banner-single " ref={banner}>
       <div className="container-xl ">
         <div className="banner-wrapper relative text-center">
-          {markdownify(title, "h1", "mb-8 banner-regular-title opacity-0")}
+          {markdownify(
+            title,
+            "h1",
+            "mb-8 banner-regular-title opacity-0 [text-shadow:_1px_2px_1px_rgb(0_0_0_/_50%)] text-white"
+          )}
           {content ? (
-            <span>{content}</span>
+            <div className="text-white">{content}</div>
           ) : (
             <ul className="breadcrumb flex items-center justify-center opacity-0">
               <li>
@@ -81,85 +85,20 @@ const Banner = ({ title, content }) => {
               <li className="capitalize">{title}</li>
             </ul>
           )}
-          {/* <div
+          <div
             aria-hidden="true"
-            className="absolute inset-x-0 -top-10 -z-20 transform-gpu overflow-hidden blur-sm sm:-top-24"
+            className="absolute inset-x-0 -top-0 -z-20 transform-gpu overflow-hidden rounded-lg sm:-top-0"
           >
-            <div className="bg-gray-200 max-h-[430px]">
+            <div className="bg-gray-200 max-h-[375px] blur-sm">
               <ImageFallback
                 className="banner-img opaciy-0 w-full object-cover"
-                src="/images/banner-app.png"
+                src="/images/features-02.png"
                 width={1170}
                 height={666}
                 priority={true}
                 alt=""
               />
             </div>
-          </div> */}
-
-          <div className="bg-theme banner-bg col-12 absolute left-0 top-0 bg-theme-light before:hidden after:hidden">
-            <Circle
-              className="circle left-[15%] top-[18%]"
-              width={32}
-              height={32}
-              fill={false}
-            />
-            <Circle
-              className="circle bottom-[27%] left-[4%]"
-              width={73}
-              height={73}
-            />
-            <Circle
-              className="circle bottom-[27%] left-[39.5%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[24%] left-[22%]"
-              width={47}
-              height={47}
-              fill={false}
-            />
-            <Circle
-              className="circle left-[31%] top-[10%]"
-              width={62}
-              height={62}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[27%] top-[15%]"
-              width={20}
-              height={20}
-              fill={false}
-            />
-            <Circle
-              className="circle bottom-[17%] right-[3%]"
-              width={73}
-              height={73}
-              fill={false}
-            />
-            <Circle
-              className="circle bottom-[50%] right-[38%]"
-              width={20}
-              height={20}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[13%] top-[30%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[29%] right-[20%]"
-              width={65}
-              height={65}
-            />
-            <Circle
-              className="circle bottom-[12%] right-[35%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
           </div>
         </div>
       </div>
@@ -167,4 +106,4 @@ const Banner = ({ title, content }) => {
   );
 };
 
-export default Banner;
+export default BannerImg;

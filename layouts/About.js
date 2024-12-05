@@ -5,9 +5,9 @@ import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Banner from "./components/Banner";
 import Circle from "./components/Circle";
-import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
 import VideoPopup from "./components/VideoPopup";
+import BannerImg from "./components/BannerImg";
 
 const About = ({ data }) => {
   const { frontmatter } = data;
@@ -26,7 +26,8 @@ const About = ({ data }) => {
   return (
     <>
       <section className="section pt-0">
-        <Banner title={title} content={content} />
+        {/* <Banner title={title} content={content} /> */}
+        <BannerImg title={title} content={content} />
         {/* About */}
         <div className="section container">
           <div className="row items-center justify-center">
@@ -82,7 +83,7 @@ const About = ({ data }) => {
         </div>
 
         {/* services */}
-        <div className="section bg-border-secondary">
+        <div className="section bg-theme-light">
           <div className="container">
             <div className="animate text-center">
               <p>{services.subtitle}</p>
@@ -267,7 +268,7 @@ const About = ({ data }) => {
         </div>
 
         {/* Members */}
-        <div className="section bg-black/10">
+        <div className="section bg-theme-light">
           <div className="container">
             <div className="animate text-center">
               <p>{our_member.subtitle}</p>

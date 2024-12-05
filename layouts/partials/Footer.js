@@ -10,20 +10,20 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const { email, phone, postal, location, opening } = config.contact_info;
   return (
-    <footer className="">
+    <footer className="bg-theme-dark text-gray-300">
       <div className="container">
         <div className="row border-y border-border py-12">
           <div className="animate md:col-6 lg:col-3">
             <Logo />
             {markdownify(footer_content, "p", "mt-3")}
 
-            <h3 className="h6 mt-5">Réseaux sociaux</h3>
+            <h3 className="h6 text-white mt-5">Réseaux sociaux</h3>
             <div className="mt-3">
               <Social source={social} className="social-icons mt-3" />
             </div>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Services</h3>
+            <h3 className="h5 text-white">Services</h3>
             {/* footer menu */}
             <ul className="mt-5 leading-6 space-y-4">
               {menu.footer_service.map((service) => (
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Liens utiles</h3>
+            <h3 className="h5 text-white">Liens utiles</h3>
             {/* footer menu */}
             <ul className="mt-5 leading-6 space-y-4">
               {menu.footer.map((menu) => (
@@ -55,9 +55,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Informations</h3>
+            <h3 className="h5 text-white">Informations</h3>
 
-            <h3 className="h6 mt-5">Localisation</h3>
+            <h3 className="h6 text-white mt-5">Localisation</h3>
             <ul className="mt-3 leading-6 space-y-4">
               <li>{markdownify(location)}</li>
               <li>{markdownify(postal)}</li>
@@ -65,7 +65,7 @@ const Footer = () => {
 
             {(phone || email) && (
               <>
-                <h3 className="h6 mt-5">Contacts</h3>
+                <h3 className="h6 text-white mt-5">Contacts</h3>
                 <ul className="mt-3 leading-6 space-y-2">
                   <li>
                     <Link href={`tel:${phone}`}>{phone}</Link>
@@ -77,7 +77,7 @@ const Footer = () => {
               </>
             )}
 
-            <h3 className="h6 mt-5">Horaires d’ouverture</h3>
+            <h3 className="h6 mt-5 text-white">Horaires d’ouverture</h3>
             <ul className="mt-3 leading-6 space-y-4">
               <li>{markdownify(opening)}</li>
             </ul>

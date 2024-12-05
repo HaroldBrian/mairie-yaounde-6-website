@@ -15,8 +15,8 @@ const Home = async () => {
   return (
     <GSAPWrapper>
       <SeoMeta title="Votre mairie" />
-      {/* <HomeBanner2 banner={banner} brands={brands} /> */}
-      <HomeBanner banner={banner} brands={brands} />
+      <HomeBanner2 banner={banner} brands={brands} />
+      {/* <HomeBanner banner={banner} brands={brands} /> */}
       <News news={news} />
       <Features features={features} />
       <ShortIntro intro={intro} />

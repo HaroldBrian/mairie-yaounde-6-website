@@ -27,7 +27,7 @@ function ScrollToTop() {
       {shadowButton && (
         <div className="">
           <button
-            className="btn btn-primary fixed bottom-5 right-7 z-50 shadow-md shadow-white rounded-md w-10 h-10 p-0 flex items-center justify-center"
+            className="btn btn-primary fixed bottom-5 right-7 z-50 shadow-md rounded-md w-10 h-10 p-0 flex items-center justify-center"
             onClick={handleScrollToTop}
           >
             <CgArrowUp className="text-[24px] text-white" />

@@ -2,7 +2,7 @@
   "site": {
     "title": "Commune de Yaoundé 6ème",
     "base_url": "/",
-    "fa6èmecon": "/images/fa6èmecon.png",
+    "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "60",
@@ -26,7 +26,7 @@
     "phone": "(237) 222 31 34 95",
     "email": "yaounde6@yahoo.fr",
     "postal": "Boîte Postale : 3759 - Yaoundé - Messa",
-    "location": "Yaoundé, 6e Arrondissement, quartier Étoug-Ébe aux en6èmerons du Lycée Bilingue",
+    "location": "Yaoundé, 6ème Arrondissement, quartier Étoug-Ébe aux environs du Lycée Bilingue",
     "opening": "Lundi à Vendredi de 8h00 à 17h00"
   },
 

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
-import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,7 +28,7 @@ const News = ({ news }) => {
               clickable: true,
               dynamicBullets: true,
             }}
-            // autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 3000 }}
             onBeforeInit={(swiper) => {
               swiper.params.pagination.el = paginationRef.current;
             }}
@@ -63,7 +62,9 @@ const News = ({ news }) => {
                         href="/"
                         className="block hover:text-primary hover:underline"
                       >
-                        {item.content.slice(0, 95)}...
+                        {item.content.length < 68
+                          ? item.content
+                          : item.content.slice(0, 68) + "..."}
                       </Link>
                     </h2>
                     <p className="mt-4">{item.title}</p>
